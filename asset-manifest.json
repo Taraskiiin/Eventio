@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Eventio/static/css/main.2927afd2.chunk.css",
+    "main.js": "/Eventio/static/js/main.60d34181.chunk.js",
+    "main.js.map": "/Eventio/static/js/main.60d34181.chunk.js.map",
+    "runtime-main.js": "/Eventio/static/js/runtime-main.ee06e2a7.js",
+    "runtime-main.js.map": "/Eventio/static/js/runtime-main.ee06e2a7.js.map",
+    "static/js/2.c20b2c93.chunk.js": "/Eventio/static/js/2.c20b2c93.chunk.js",
+    "static/js/2.c20b2c93.chunk.js.map": "/Eventio/static/js/2.c20b2c93.chunk.js.map",
+    "index.html": "/Eventio/index.html",
+    "static/css/main.2927afd2.chunk.css.map": "/Eventio/static/css/main.2927afd2.chunk.css.map",
+    "static/js/2.c20b2c93.chunk.js.LICENSE.txt": "/Eventio/static/js/2.c20b2c93.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee06e2a7.js",
+    "static/js/2.c20b2c93.chunk.js",
+    "static/css/main.2927afd2.chunk.css",
+    "static/js/main.60d34181.chunk.js"
+  ]
+}
