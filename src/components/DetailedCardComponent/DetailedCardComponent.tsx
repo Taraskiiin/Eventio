@@ -1,12 +1,14 @@
 import React from 'react';
-import { TicketsIcon, NoteIcon, CloseIcon } from '../icons/icons';
+import { TicketsIcon, NoteIcon, CloseIcon, UahIcon } from '../icons/icons';
 
-type DetailedCardComponent = {
+import './detailed-card-component.scss';
+
+type DetailedCardComponentType = {
   data: string;
   name: string;
   genre: string;
   src: string;
-  price: number;
+  price: string;
 };
 
 export const DetailedCardComponent = ({
@@ -15,20 +17,26 @@ export const DetailedCardComponent = ({
   genre,
   src,
   price,
-}: DetailedCardComponent) => {
-  <img
-    className="detailed-card-component"
-    src="https://image.freepik.com/free-photo/people-concert-with-smoke-overlay-texture_53876-126856.jpg"
-    alt="image event"
-  >
-    <CloseIcon />
-    <p className="data">FRIDAY AUG 24, 9PM</p>
-    <p className="name">Brightlight Music Festival</p>
-    <div className="bottom-block">
-      <NoteIcon />
-      <p className="genre"></p>
-      <TicketsIcon />
-      <p className="price"></p>
+}: DetailedCardComponentType) => {
+  return (
+    <div
+      className="detailed-card-component"
+      style={{ backgroundImage: `url(${src})` }}
+    >
+      <button className="close-btn">
+        <CloseIcon />
+      </button>
+      <p className="data">{data}</p>
+      <p className="name">{name}</p>
+      <div className="bottom-block">
+        <NoteIcon />
+        <p className="genre">{genre}</p>
+        <TicketsIcon />
+        <p className="price">
+          <UahIcon />
+          {price}
+        </p>
+      </div>
     </div>
-  </img>;
+  );
 };
