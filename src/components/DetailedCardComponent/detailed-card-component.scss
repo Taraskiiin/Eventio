@@ -12,6 +12,7 @@
   margin-bottom: 0 auto;
 
   .close-btn {
+    opacity: 0;
     width: 30px;
     height: 30px;
     border-radius: 50px;
@@ -24,13 +25,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3 ease-in;
     &:hover {
-      .close-icon {
-        fill: #c77f7f;
-      }
+      opacity: 1;
     }
     .close-icon {
-      transition: all 0.3s ease;
       fill: #ffffff;
     }
   }
