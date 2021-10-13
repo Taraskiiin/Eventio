@@ -148,6 +148,7 @@ export const LinkArrowIcon = () => (
     />
   </svg>
 );
+
 export const LogoIcon = () => (
   <svg
     className="logo-icon"

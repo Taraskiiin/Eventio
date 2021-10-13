@@ -17,26 +17,30 @@ export const DetailedCardComponent = ({
   genre,
   src,
   price,
-}: DetailedCardComponentType) => {
-  return (
+}: DetailedCardComponentType) => (
+  <div className="detailed-card-component-wrapper">
     <div
       className="detailed-card-component"
       style={{ backgroundImage: `url(${src})` }}
     >
-      <button className="close-btn">
-        <CloseIcon />
-      </button>
-      <p className="data">{data}</p>
-      <p className="name">{name}</p>
-      <div className="bottom-block">
-        <NoteIcon />
-        <p className="genre">{genre}</p>
-        <TicketsIcon />
-        <p className="price">
-          <UahIcon />
-          {price}
-        </p>
+      <div className="overlay">
+        <button className="close-btn">
+          <CloseIcon />
+        </button>
+        <div className="info-block">
+          <p className="data">{data}</p>
+          <p className="name">{name}</p>
+          <div className="bottom-block">
+            <NoteIcon />
+            <p className="genre">{genre}</p>
+            <TicketsIcon />
+            <p className="price">
+              <UahIcon />
+              {price}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  );
-};
+  </div>
+);

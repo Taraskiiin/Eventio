@@ -11,19 +11,18 @@ type ShortInfoCardType = {
   src: string;
 };
 
-const ShortInfoCard = ({ name, genre, link, src }: ShortInfoCardType) => {
-  return (
-    <div style={{ backgroundImage: `url(${src})` }} className="short-info-card">
-      <p className="name">{name}</p>
-      <p className="genre">
-        <NoteIcon />
-        <span className="genre-label">{genre}</span>
-      </p>
-      <a href={link} className="link">
-        Learn more <LinkArrowIcon />
-      </a>
-    </div>
-  );
-};
+const ShortInfoCard = ({ name, genre, link, src }: ShortInfoCardType) => (
+  <div style={{ backgroundImage: `url(${src})` }} className="short-info-card">
+    <div className="overlay" />
+    <p className="name">{name}</p>
+    <p className="genre">
+      <NoteIcon />
+      <span className="genre-label">{genre}</span>
+    </p>
+    <a href={link} className="link">
+      Learn more <LinkArrowIcon />
+    </a>
+  </div>
+);
 
 export default ShortInfoCard;
