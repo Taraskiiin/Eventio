@@ -7,44 +7,44 @@
     )
       (i = l[c]),
         Object.prototype.hasOwnProperty.call(o, i) && o[i] && s.push(o[i][0]),
-        (o[i] = 0)
-    for (n in f) Object.prototype.hasOwnProperty.call(f, n) && (e[n] = f[n])
-    for (p && p(t); s.length; ) s.shift()()
-    return u.push.apply(u, a || []), r()
+        (o[i] = 0);
+    for (n in f) Object.prototype.hasOwnProperty.call(f, n) && (e[n] = f[n]);
+    for (p && p(t); s.length; ) s.shift()();
+    return u.push.apply(u, a || []), r();
   }
   function r() {
     for (var e, t = 0; t < u.length; t++) {
       for (var r = u[t], n = !0, l = 1; l < r.length; l++) {
-        var f = r[l]
-        0 !== o[f] && (n = !1)
+        var f = r[l];
+        0 !== o[f] && (n = !1);
       }
-      n && (u.splice(t--, 1), (e = i((i.s = r[0]))))
+      n && (u.splice(t--, 1), (e = i((i.s = r[0]))));
     }
-    return e
+    return e;
   }
   var n = {},
     o = { 1: 0 },
-    u = []
+    u = [];
   function i(t) {
-    if (n[t]) return n[t].exports
-    var r = (n[t] = { i: t, l: !1, exports: {} })
-    return e[t].call(r.exports, r, r.exports, i), (r.l = !0), r.exports
+    if (n[t]) return n[t].exports;
+    var r = (n[t] = { i: t, l: !1, exports: {} });
+    return e[t].call(r.exports, r, r.exports, i), (r.l = !0), r.exports;
   }
-  ;(i.m = e),
+  (i.m = e),
     (i.c = n),
     (i.d = function (e, t, r) {
-      i.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: r })
+      i.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: r });
     }),
     (i.r = function (e) {
       'undefined' !== typeof Symbol &&
         Symbol.toStringTag &&
         Object.defineProperty(e, Symbol.toStringTag, { value: 'Module' }),
-        Object.defineProperty(e, '__esModule', { value: !0 })
+        Object.defineProperty(e, '__esModule', { value: !0 });
     }),
     (i.t = function (e, t) {
-      if ((1 & t && (e = i(e)), 8 & t)) return e
-      if (4 & t && 'object' === typeof e && e && e.__esModule) return e
-      var r = Object.create(null)
+      if ((1 & t && (e = i(e)), 8 & t)) return e;
+      if (4 & t && 'object' === typeof e && e && e.__esModule) return e;
+      var r = Object.create(null);
       if (
         (i.r(r),
         Object.defineProperty(r, 'default', { enumerable: !0, value: e }),
@@ -55,31 +55,31 @@
             r,
             n,
             function (t) {
-              return e[t]
+              return e[t];
             }.bind(null, n)
-          )
-      return r
+          );
+      return r;
     }),
     (i.n = function (e) {
       var t =
         e && e.__esModule
           ? function () {
-              return e.default
+              return e.default;
             }
           : function () {
-              return e
-            }
-      return i.d(t, 'a', t), t
+              return e;
+            };
+      return i.d(t, 'a', t), t;
     }),
     (i.o = function (e, t) {
-      return Object.prototype.hasOwnProperty.call(e, t)
+      return Object.prototype.hasOwnProperty.call(e, t);
     }),
-    (i.p = '/Eventio/')
+    (i.p = '/Eventio/');
   var l = (this.webpackJsonpEventio = this.webpackJsonpEventio || []),
-    f = l.push.bind(l)
-  ;(l.push = t), (l = l.slice())
-  for (var a = 0; a < l.length; a++) t(l[a])
-  var p = f
-  r()
-})([])
+    f = l.push.bind(l);
+  (l.push = t), (l = l.slice());
+  for (var a = 0; a < l.length; a++) t(l[a]);
+  var p = f;
+  r();
+})([]);
 //# sourceMappingURL=runtime-main.ee06e2a7.js.map
