@@ -43,12 +43,13 @@
         width: 30px;
         height: 30px;
         border-radius: 50px;
-        background-color: #989898;
+        background-color: #98989880;
         border: none;
         position: absolute;
         right: 5px;
         top: 5px;
         transition: all 0.3 ease-in;
+        cursor: pointer;
 
         &:hover {
           opacity: 1;
