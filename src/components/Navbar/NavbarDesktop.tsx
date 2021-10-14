@@ -10,8 +10,9 @@ const NavbarDesktop = () => {
     <div className="navbar-desktop_block">
       <div className="navbar-desktop_flex">
         <a className="logo" href="#">
-          <span className="E">E</span>
+          <span className="e">E</span>
           <LogoIcon />
+          <span className="v">v</span>
           <span className="entio">entio</span>
         </a>
         <nav className="navbar-desktop">
