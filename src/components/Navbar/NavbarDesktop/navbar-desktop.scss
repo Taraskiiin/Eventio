@@ -1,6 +1,7 @@
 .navbar-desktop_block {
   display: none;
-  padding: 40px;
+  padding: 40px 16px;
+  max-width: 1440px;
 
   .navbar-desktop_flex {
     display: flex;
@@ -14,11 +15,12 @@
       text-decoration: none;
       color: #fc1055;
       fill: #fc1055;
+      font-size: 24px;
 
       .logo-icon {
         position: absolute;
         top: -12px;
-        left: -2px;
+        left: 3px;
       }
 
       .E {
@@ -31,6 +33,7 @@
     ul {
       display: grid;
       grid-template-columns: repeat(4, minmax(100px, 1fr));
+      justify-items: flex-end;
 
       li {
         margin-right: 10px;
