@@ -1,0 +1,39 @@
+.wrapper-collections-slick-slider {
+  margin: 20px auto;
+  width: 95%;
+  position: relative;
+
+  .collections-slick-slider {
+    .slick-slide {
+      margin-right: 10px;
+    }
+  }
+
+  .left-overlay {
+    position: absolute;
+    height: 190px;
+    width: 70px;
+    left: 0;
+    top: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(242, 242, 242, 1) 0%,
+      rgba(242, 242, 242, 0) 100%
+    );
+    z-index: 2;
+  }
+
+  .right-overlay {
+    position: absolute;
+    height: 190px;
+    width: 70px;
+    right: 0;
+    top: 0;
+    background: linear-gradient(
+      -90deg,
+      rgba(242, 242, 242, 1) 0%,
+      rgba(242, 242, 242, 0) 100%
+    );
+    z-index: 2;
+  }
+}

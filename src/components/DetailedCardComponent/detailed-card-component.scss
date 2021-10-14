@@ -1,76 +1,115 @@
-.detailed-card-component {
-  max-width: 80%;
+.detailed-card-component-wrapper {
+  max-width: 500px;
+  min-width: 300px;
   height: 256px;
-  border-radius: 20px;
-  background-size: cover;
   position: relative;
-  color: #ffffff;
-  font-weight: 600;
-  padding: 16px 16px 16px 16px;
-  font-size: 12px;
-  background-repeat: no-repeat;
-  margin-bottom: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 31px -21px rgba(43, 46, 49, 0.4);
+  transition: 0.3s ease all;
+  cursor: pointer;
 
-  .close-btn {
-    opacity: 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-    background-color: #989898;
-    border: none;
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    cursor: pointer;
+  &:hover {
+    box-shadow: 0px 0px 31px -21px rgba(43, 46, 49, 0.7);
+  }
+
+  .detailed-card-component {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3 ease-in;
-    &:hover {
-      opacity: 1;
-    }
-    .close-icon {
-      fill: #ffffff;
-    }
-  }
-  .data {
-    margin-top: 160px;
-    margin-bottom: 5px;
-    letter-spacing: 0.5px;
-    line-height: 16px;
-  }
-  .name {
-    font-size: 22px;
-    line-height: 24px;
-    margin-bottom: 10px;
-  }
-  .bottom-block {
-    display: flex;
-    justify-content: start;
-    color: #bdc0c4;
-    align-items: center;
-    .note-icon {
-      fill: #bdc0c4;
-      width: 10px;
-      height: 10px;
-      margin-right: 7px;
-    }
-    .genre {
-      margin-right: 7px;
-      letter-spacing: 1px;
-    }
-    .tickets-icon {
-      fill: #bdc0c4;
-      width: 11px;
-      height: 12px;
-      margin-right: 7px;
-    }
-    .price {
-      .uah-icon {
-        fill: #bdc0c4;
-        width: 8px;
-        height: 8px;
-        margin-right: 2px;
+    align-items: flex-end;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 12px;
+
+    .overlay {
+      background: linear-gradient(
+        360deg,
+        rgba(0, 0, 0, 0.6477941518404237) 0%,
+        rgba(0, 0, 0, 0) 90%,
+        rgba(0, 212, 255, 0) 100%
+      );
+      width: 100%;
+      padding: 16px;
+      transition: 0.3s ease all;
+
+      &:hover {
+        background: rgb(0, 0, 0);
+      }
+
+      .close-btn {
+        opacity: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        background-color: #98989880;
+        border: none;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        transition: all 0.3 ease-in;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+        }
+        .close-icon {
+          fill: #ffffff;
+        }
+      }
+
+      .info-block {
+        min-height: 100px;
+        width: 100%;
+
+        .data {
+          margin-bottom: 5px;
+          letter-spacing: 0.5px;
+          line-height: 16px;
+        }
+
+        .name {
+          font-size: 22px;
+          line-height: 24px;
+          margin-bottom: 10px;
+        }
+
+        .bottom-block {
+          display: flex;
+          justify-content: start;
+          color: #ececec;
+          align-items: center;
+
+          .note-icon {
+            fill: #bdc0c4;
+            width: 10px;
+            height: 10px;
+            margin-right: 7px;
+          }
+
+          .genre {
+            margin-right: 7px;
+            letter-spacing: 1px;
+          }
+
+          .tickets-icon {
+            fill: #bdc0c4;
+            width: 11px;
+            height: 12px;
+            margin-right: 7px;
+          }
+
+          .price {
+            .uah-icon {
+              fill: #bdc0c4;
+              width: 8px;
+              height: 8px;
+              margin-right: 2px;
+            }
+          }
+        }
       }
     }
   }

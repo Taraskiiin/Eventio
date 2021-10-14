@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { NavLink } from 'react-router-dom';
-import { LogoIcon } from '../icons/icons';
+import { LogoIcon } from '../../icons/icons';
 
 import './navbar-desktop.scss';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import { HomeIcon, SearchIcon, TicketsIcon, UserIcon } from '../icons/icons';
+import { HomeIcon, SearchIcon, TicketsIcon, UserIcon } from '../../icons/icons';
 
 import './navbar-mobile.scss';
 
