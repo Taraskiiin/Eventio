@@ -8,6 +8,8 @@ import './mobile-header.scss';
 const MobileHeader = () => {
   const router = useRouter();
 
+  console.log(router);
+
   const activePage =
     Object.entries(pagesNamings).find(
       (entry) => entry[0] === router.pathname
