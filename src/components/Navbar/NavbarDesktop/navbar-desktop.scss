@@ -1,7 +1,6 @@
 .navbar-desktop_block {
   display: none;
   padding: 40px 16px;
-  max-width: 1440px;
 
   .navbar-desktop_flex {
     display: flex;
@@ -63,5 +62,6 @@
 @media screen and (min-width: 767px) {
   .navbar-desktop_block {
     display: block;
+    max-width: 1440px;
   }
 }
