@@ -1,7 +1,7 @@
 import React from 'react';
 
+import Collections from '../../components/Collections/Collections';
 import { DetailedCardComponent } from '../../components/DetailedCardComponent/DetailedCardComponent';
-import ShortInfoCard from '../../components/ShortInfoCard/ShortInfoCard';
 
 import { SettingsIcon } from '../../components/icons/icons';
 import { MusicType } from '../../enums';
@@ -24,12 +24,7 @@ const Home = () => (
         src="https://image.freepik.com/free-photo/people-concert-with-smoke-overlay-texture_53876-126856.jpg"
         price="150 - 230"
       />
-      <ShortInfoCard
-        name="Electronica Next Month"
-        genre={MusicType.Electronic}
-        link=""
-        src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      />
+      <Collections />
     </div>
   </section>
 );

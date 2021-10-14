@@ -1,29 +1,29 @@
-@media screen and (max-width: 1400px) {
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 16px;
-    .title-block {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+
+  .title-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    align-items: center;
+
+    .settings-btn {
+      border: none;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      background: #ffffff;
+      cursor: pointer;
       display: flex;
-      justify-content: space-between;
-      margin-bottom: 30px;
-      font-weight: 700;
-      font-size: 28px;
+      justify-content: center;
       align-items: center;
 
-      .settings-btn {
-        border: none;
-        border-radius: 50%;
-        width: 32px;
-        height: 32px;
-        background: #ffffff;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .settings-icon {
-          fill: #fc1055;
-        }
+      .settings-icon {
+        fill: #fc1055;
       }
     }
   }
