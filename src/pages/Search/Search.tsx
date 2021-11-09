@@ -1,9 +1,14 @@
 import React from 'react';
 
-const Search = () => (
-  <>
-    <h2>Search</h2>
-  </>
-);
+import LocationBlock from '../../components/LocationBlock/LocationBlock';
 
+const Search = () => {
+  return (
+    <section className="Search">
+      <div className="container">
+        <LocationBlock />
+      </div>
+    </section>
+  );
+};
 export default Search;
