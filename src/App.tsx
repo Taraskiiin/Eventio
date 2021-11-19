@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-import Router from './Router/Router';
+import Router from './Router/Router'
 
-import './styles/reset.scss';
-import './styles/styles.scss';
+import './styles/reset.scss'
+import './styles/styles.scss'
 
-function App() {
-  return <Router />;
+const App: React.FC = () => {
+  return <Router />
 }
 
-export default App;
+export default App

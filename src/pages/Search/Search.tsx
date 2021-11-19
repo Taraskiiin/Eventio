@@ -1,9 +1,5 @@
-import React from 'react';
+import React from 'react'
 
-const Search = () => (
-  <>
-    <h2>Search</h2>
-  </>
-);
+const Search: React.FC = () => <h2>Search</h2>
 
-export default Search;
+export default Search

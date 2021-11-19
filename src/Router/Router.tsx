@@ -1,25 +1,25 @@
-import React from 'react';
-import { Route, HashRouter } from 'react-router-dom';
+import React from 'react'
+import { Route, HashRouter, Navigate } from 'react-router-dom'
 
-import Navbar from '../components/Navbar/Navbar';
-
-import { Home, Search, Tickets, User } from '../pages';
+import Navbar from '../components/Navbar/Navbar'
+import { Home, Search, Tickets, User } from '../pages'
 
 export const pagesNamings = {
   '/': 'Home',
   '/search': 'Search',
   '/tickets': 'Tickets',
   '/user': 'User',
-};
+}
 
-const Router = () => (
+const Router: React.FC = () => (
   <HashRouter>
     <Navbar />
-    <Route exact path="/" component={Home} />
-    <Route path="/search" component={Search} />
-    <Route path="/tickets" component={Tickets} />
-    <Route path="/user" component={User} />
+    <Route path='*' element={<Navigate to='/' />} />
+    <Route path='/' element={<Home />} />
+    <Route path='/search' element={<Search />} />
+    <Route path='/tickets' element={<Tickets />} />
+    <Route path='/user' element={<User />} />
   </HashRouter>
-);
+)
 
-export default Router;
+export default Router

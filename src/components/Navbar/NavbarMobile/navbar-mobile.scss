@@ -1,21 +1,21 @@
 .navbar-mobile {
-  padding-left: 40px;
-  padding-right: 40px;
-  background-color: #fff;
-  height: 90px;
-  width: 100%;
   position: fixed;
+  z-index: 99;
   bottom: 0;
   left: 0;
+  width: 100%;
+  height: 90px;
   box-sizing: border-box;
-  z-index: 99;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: #fff;
 
   ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     height: 100%;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 
     li {
       list-style: none;
@@ -23,8 +23,8 @@
 
     a {
       .navbar_icon {
-        transition: all 0.3s ease;
         fill: #c2c6ce;
+        transition: all 0.3s ease;
 
         &:hover {
           fill: #c77f7f;
