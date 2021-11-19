@@ -1,59 +1,54 @@
 .navbar-desktop_block {
   display: none;
-  padding: 10px 40px;
+  padding: 40px 16px;
+  margin: 0 auto;
 
   .navbar-desktop_flex {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    font-family: 'Italianno', cursive;
 
     .logo {
       position: relative;
       display: flex;
       align-items: start;
-      opacity: 1;
-      text-decoration: none;
       color: #fc1055;
       fill: #fc1055;
+      font-size: 24px;
+      text-decoration: none;
 
       .logo-icon {
-        opacity: 0;
         position: absolute;
-        top: -5px;
-        transition: all 0.2s ease-out;
+        top: -12px;
+        left: 3px;
+        opacity: 0;
       }
 
-      .e {
-        transition: all 0.2s ease-out;
-      }
-
-      &:hover {
-        .e {
-          margin-right: 10px;
-        }
-        .v {
-          opacity: 0;
-        }
-        .logo-icon {
-          opacity: 1;
-        }
+      .E {
+        margin-right: 20px;
       }
     }
   }
+
   .navbar-desktop {
     ul {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(100px, 1fr));
+      justify-items: flex-end;
+
       li {
         margin-right: 10px;
+
         &:last-child {
           margin-right: 0;
         }
+
         a {
-          text-decoration: none;
           color: #373a42;
+          text-decoration: none;
+          transition: 0.3s ease-in;
         }
+
         &:hover,
         &:active,
         &:focus {
@@ -69,5 +64,6 @@
 @media screen and (min-width: 767px) {
   .navbar-desktop_block {
     display: block;
+    max-width: 1200px;
   }
 }

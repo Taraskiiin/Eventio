@@ -1,0 +1,30 @@
+.container {
+  max-width: 1200px;
+  padding: 16px;
+  margin: 0 auto;
+
+  .title-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+
+    .settings-btn {
+      display: flex;
+      width: 32px;
+      height: 32px;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background: #fff;
+      border-radius: 50%;
+      cursor: pointer;
+
+      .settings-icon {
+        fill: #fc1055;
+      }
+    }
+  }
+}
