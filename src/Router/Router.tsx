@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, HashRouter, Navigate } from 'react-router-dom'
+import { Route, HashRouter, Navigate, Routes } from 'react-router-dom'
 
 import Navbar from '../components/Navbar/Navbar'
 import { Home, Search, Tickets, User } from '../pages'
@@ -14,11 +14,13 @@ export const pagesNamings = {
 const Router: React.FC = () => (
   <HashRouter>
     <Navbar />
-    <Route path='*' element={<Navigate to='/' />} />
-    <Route path='/' element={<Home />} />
-    <Route path='/search' element={<Search />} />
-    <Route path='/tickets' element={<Tickets />} />
-    <Route path='/user' element={<User />} />
+    <Routes>
+      <Route path='*' element={<Navigate to='/' />} />
+      <Route path='/' element={<Home />} />
+      <Route path='/search' element={<Search />} />
+      <Route path='/tickets' element={<Tickets />} />
+      <Route path='/user' element={<User />} />
+    </Routes>
   </HashRouter>
 )
 

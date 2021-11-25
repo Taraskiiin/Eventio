@@ -1,5 +1,14 @@
 import React from 'react'
 
-const Search: React.FC = () => <h2>Search</h2>
+import LocationBlock from '../../components/LocationBlock/LocationBlock'
 
+const Search: React.FC = () => {
+  return (
+    <section className='Search'>
+      <div className='container'>
+        <LocationBlock />
+      </div>
+    </section>
+  )
+}
 export default Search
