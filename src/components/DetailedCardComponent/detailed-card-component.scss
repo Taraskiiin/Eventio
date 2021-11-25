@@ -1,38 +1,33 @@
 .detailed-card-component-wrapper {
-  max-width: 500px;
-  min-width: 300px;
-  height: 256px;
   position: relative;
-  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0px 0px 31px -21px rgba(43, 46, 49, 0.4);
-  transition: 0.3s ease all;
+  min-width: 300px;
+  max-width: 500px;
+  height: 256px;
+  border-radius: 20px;
+  box-shadow: 0 0 31px -21px rgba(43, 46, 49, 0.4);
   cursor: pointer;
+  transition: 0.3s ease all;
 
   &:hover {
-    box-shadow: 0px 0px 31px -21px rgba(43, 46, 49, 0.7);
+    box-shadow: 0 0 31px -21px rgba(43, 46, 49, 0.7);
   }
 
   .detailed-card-component {
     display: flex;
-    align-items: flex-end;
-    box-sizing: border-box;
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
+    align-items: flex-end;
     background-size: cover;
-    color: #ffffff;
-    font-weight: 600;
+    color: #fff;
     font-size: 12px;
+    font-weight: 600;
 
     .overlay {
-      background: linear-gradient(
-        360deg,
-        rgba(0, 0, 0, 0.6477941518404237) 0%,
-        rgba(0, 0, 0, 0) 90%,
-        rgba(0, 212, 255, 0) 100%
-      );
       width: 100%;
       padding: 16px;
+      background: linear-gradient(360deg, rgba(0, 0, 0, 0.6477941518404237) 0%, rgba(0, 0, 0, 0) 90%, rgba(0, 212, 255, 0) 100%);
       transition: 0.3s ease all;
 
       &:hover {
@@ -40,29 +35,30 @@
       }
 
       .close-btn {
-        opacity: 0;
+        position: absolute;
+        top: 5px;
+        right: 5px;
         width: 30px;
         height: 30px;
-        border-radius: 50px;
-        background-color: #98989880;
         border: none;
-        position: absolute;
-        right: 5px;
-        top: 5px;
-        transition: all 0.3 ease-in;
+        background-color: #98989880;
+        border-radius: 50px;
         cursor: pointer;
+        opacity: 0;
+        transition: all 0.3 ease-in;
 
         &:hover {
           opacity: 1;
         }
+
         .close-icon {
-          fill: #ffffff;
+          fill: #fff;
         }
       }
 
       .info-block {
-        min-height: 100px;
         width: 100%;
+        min-height: 100px;
 
         .data {
           margin-bottom: 5px;
@@ -71,22 +67,22 @@
         }
 
         .name {
+          margin-bottom: 10px;
           font-size: 22px;
           line-height: 24px;
-          margin-bottom: 10px;
         }
 
         .bottom-block {
           display: flex;
+          align-items: center;
           justify-content: start;
           color: #ececec;
-          align-items: center;
 
           .note-icon {
-            fill: #bdc0c4;
             width: 10px;
             height: 10px;
             margin-right: 7px;
+            fill: #bdc0c4;
           }
 
           .genre {
@@ -95,18 +91,18 @@
           }
 
           .tickets-icon {
-            fill: #bdc0c4;
             width: 11px;
             height: 12px;
             margin-right: 7px;
+            fill: #bdc0c4;
           }
 
           .price {
             .uah-icon {
-              fill: #bdc0c4;
               width: 8px;
               height: 8px;
               margin-right: 2px;
+              fill: #bdc0c4;
             }
           }
         }

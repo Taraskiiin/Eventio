@@ -1,6 +1,7 @@
 .navbar-desktop_block {
   display: none;
-  padding: 40px;
+  padding: 40px 16px;
+  margin: 0 auto;
 
   .navbar-desktop_flex {
     display: flex;
@@ -11,18 +12,20 @@
       position: relative;
       display: flex;
       align-items: start;
-      text-decoration: none;
       color: #fc1055;
       fill: #fc1055;
+      font-size: 24px;
+      text-decoration: none;
 
       .logo-icon {
         position: absolute;
-        top: -30%;
-        left: 2%;
+        top: -12px;
+        left: 3px;
+        opacity: 0;
       }
 
       .E {
-        margin-right: 35%;
+        margin-right: 20px;
       }
     }
   }
@@ -31,6 +34,7 @@
     ul {
       display: grid;
       grid-template-columns: repeat(4, minmax(100px, 1fr));
+      justify-items: flex-end;
 
       li {
         margin-right: 10px;
@@ -40,8 +44,8 @@
         }
 
         a {
-          text-decoration: none;
           color: #373a42;
+          text-decoration: none;
           transition: 0.3s ease-in;
         }
 
@@ -60,5 +64,6 @@
 @media screen and (min-width: 767px) {
   .navbar-desktop_block {
     display: block;
+    max-width: 1200px;
   }
 }

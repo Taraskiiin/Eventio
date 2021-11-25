@@ -1,9 +1,5 @@
-import React from 'react';
+import React from 'react'
 
-const User = () => (
-  <>
-    <h2>User</h2>
-  </>
-);
+const User: React.FC = () => <h2>User</h2>
 
-export default User;
+export default User
