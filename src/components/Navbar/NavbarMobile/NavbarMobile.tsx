@@ -14,6 +14,11 @@ const NavbarMobile: React.FC = () => (
           </NavLink>
         </li>
         <li>
+          <NavLink to='/events'>
+            <UserIcon />
+          </NavLink>
+        </li>
+        <li>
           <NavLink to='/search'>
             <SearchIcon />
           </NavLink>

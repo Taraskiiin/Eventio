@@ -19,6 +19,9 @@ const NavbarDesktop: React.FC = () => {
               <NavLink to='/'>Home</NavLink>
             </li>
             <li>
+              <NavLink to='/Events'>Events</NavLink>
+            </li>
+            <li>
               <NavLink to='/search'>Search</NavLink>
             </li>
             <li>
