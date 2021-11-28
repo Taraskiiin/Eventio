@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, HashRouter, Navigate, Routes } from 'react-router-dom'
 
 import Navbar from '../components/Navbar/Navbar'
-import { Home, Search, Tickets, User } from '../pages'
+import { Events, Home, Search, Tickets, User } from '../pages'
 
 export const pagesNamings = {
   '/': 'Home',
@@ -18,6 +18,7 @@ const Router: React.FC = () => (
       <Route path='*' element={<Navigate to='/' />} />
       <Route path='/' element={<Home />} />
       <Route path='/search' element={<Search />} />
+      <Route path='/events' element={<Events />} />
       <Route path='/tickets' element={<Tickets />} />
       <Route path='/user' element={<User />} />
     </Routes>

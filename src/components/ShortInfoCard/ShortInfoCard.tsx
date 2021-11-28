@@ -11,7 +11,7 @@ type ShortInfoCardType = {
 }
 
 const ShortInfoCard: React.FC<ShortInfoCardType> = ({ name, genre, link, src }) => (
-  <div style={{ backgroundImage: `url(${src})` }} className='short-info-card'>
+  <div style={{ backgroundImage: `url(${src})` }} className={styles['short-info-card']}>
     <div className={styles['overlay']} />
     <p className={styles['name']}>{name}</p>
     <p className={styles['genre']}>

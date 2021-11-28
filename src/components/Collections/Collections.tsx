@@ -5,6 +5,7 @@ import ShortInfoCard from '../../components/ShortInfoCard/ShortInfoCard'
 import { MusicType } from '../../enums'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import './override-slider.scss'
 import styles from './collections.module.scss'
 
 const Collections: React.FC = () => {
@@ -21,7 +22,7 @@ const Collections: React.FC = () => {
   return (
     <section className={styles['wrapper-collections-slick-slider']}>
       <div className={styles['left-overlay']} />
-      <Slider {...settings} className={styles['collections-slick-slider']}>
+      <Slider {...settings}>
         <ShortInfoCard
           name='Electronica Next Month'
           genre={MusicType.Electronic}
@@ -47,7 +48,7 @@ const Collections: React.FC = () => {
           src='https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
         />
       </Slider>
-      <div className='right-overlay' />
+      <div className={styles['right-overlay']} />
     </section>
   )
 }

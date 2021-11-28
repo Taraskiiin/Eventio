@@ -23,7 +23,9 @@ const Home: React.FC = () => (
         src='https://image.freepik.com/free-photo/people-concert-with-smoke-overlay-texture_53876-126856.jpg'
         price='150 - 230'
       />
+      <h2>Collections</h2>
       <Collections />
+      <h2>Upcoming</h2>
       <Calendar />
     </div>
   </section>
