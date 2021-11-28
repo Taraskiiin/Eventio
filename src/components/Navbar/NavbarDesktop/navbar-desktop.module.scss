@@ -33,12 +33,10 @@
   .navbar-desktop {
     ul {
       display: grid;
-      grid-template-columns: repeat(4, minmax(100px, 1fr));
-      justify-items: flex-end;
+      grid-template-columns: repeat(5, minmax(100px, auto));
+      justify-items: flex-start;
 
       li {
-        margin-right: 10px;
-
         &:last-child {
           margin-right: 0;
         }

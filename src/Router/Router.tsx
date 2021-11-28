@@ -9,6 +9,7 @@ export const pagesNamings = {
   '/search': 'Search',
   '/tickets': 'Tickets',
   '/user': 'User',
+  '/events': 'Events',
 }
 
 const Router: React.FC = () => (
