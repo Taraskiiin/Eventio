@@ -2,19 +2,18 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 import { LogoIcon } from '../../../assets/icons/icons'
-
-import './navbar-desktop.scss'
+import styles from './navbar-desktop.module.scss'
 
 const NavbarDesktop: React.FC = () => {
   return (
-    <div className='navbar-desktop_block'>
-      <div className='navbar-desktop_flex'>
-        <a className='logo' href='#'>
+    <div className={styles['navbar-desktop_block']}>
+      <div className={styles['navbar-desktop_flex']}>
+        <a className={styles['logo']} href='#'>
           <span className='E'>E</span>
           <LogoIcon />
           <span className='entio'>entio</span>
         </a>
-        <nav className='navbar-desktop'>
+        <nav className={styles['navbar-desktop']}>
           <ul>
             <li>
               <NavLink to='/'>Home</NavLink>

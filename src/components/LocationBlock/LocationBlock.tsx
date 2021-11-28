@@ -9,12 +9,7 @@ const LocationBlock: React.FC = () => {
     width: '100vw',
     height: '100vh',
   }
-  return (
-    <ReactMapGL
-      {...viewport}
-      mapboxApiAccessToken='pk.eyJ1IjoidGFyYXNraWlpbiIsImEiOiJja3Zyd2Y3ZGgxbnR4MndxaDdtMnd4czg2In0.6IZcJc33_zLJHZ3fwhKnFA'
-    />
-  )
+  return <ReactMapGL {...viewport} mapboxApiAccessToken={process.env.REACT_MAPBOX_API_KEY} />
 }
 
 export default LocationBlock

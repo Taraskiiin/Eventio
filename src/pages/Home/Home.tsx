@@ -5,15 +5,14 @@ import Calendar from '../../components/Calendar/Calendar'
 import Collections from '../../components/Collections/Collections'
 import { DetailedCardComponent } from '../../components/DetailedCardComponent/DetailedCardComponent'
 import { MusicType } from '../../enums'
-
-import './home.scss'
+import styles from './home.module.scss'
 
 const Home: React.FC = () => (
-  <section className='filters__block'>
-    <div className='container'>
-      <div className='title-block'>
+  <section className={styles['filters__block']}>
+    <div className={styles['container']}>
+      <div className={styles['title-block']}>
         <h2>For you</h2>
-        <button className='settings-btn'>
+        <button className={styles['settings-btn']}>
           <SettingsIcon />
         </button>
       </div>

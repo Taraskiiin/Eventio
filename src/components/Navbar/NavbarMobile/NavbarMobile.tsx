@@ -2,12 +2,11 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 import { HomeIcon, SearchIcon, TicketsIcon, UserIcon } from '../../../assets/icons/icons'
-
-import './navbar-mobile.scss'
+import styles from './navbar-mobile.module.scss'
 
 const NavbarMobile: React.FC = () => (
   <footer>
-    <nav className='navbar-mobile'>
+    <nav className={styles['navbar-mobile']}>
       <ul>
         <li>
           <NavLink to='/'>

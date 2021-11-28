@@ -3,10 +3,9 @@ import Slider from 'react-slick'
 
 import ShortInfoCard from '../../components/ShortInfoCard/ShortInfoCard'
 import { MusicType } from '../../enums'
-
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import './collections.scss'
+import styles from './collections.module.scss'
 
 const Collections: React.FC = () => {
   const settings = {
@@ -20,9 +19,9 @@ const Collections: React.FC = () => {
   }
 
   return (
-    <section className='wrapper-collections-slick-slider'>
-      <div className='left-overlay' />
-      <Slider {...settings} className='collections-slick-slider'>
+    <section className={styles['wrapper-collections-slick-slider']}>
+      <div className={styles['left-overlay']} />
+      <Slider {...settings} className={styles['collections-slick-slider']}>
         <ShortInfoCard
           name='Electronica Next Month'
           genre={MusicType.Electronic}

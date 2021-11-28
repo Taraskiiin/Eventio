@@ -1,8 +1,7 @@
 import React from 'react'
 
 import { TicketsIcon, NoteIcon, CloseIcon, UahIcon } from '../../assets/icons/icons'
-
-import './detailed-card-component.scss'
+import styles from './detailed-card-component.module.scss'
 
 interface DetailedCardComponentProps {
   data: string
@@ -13,20 +12,20 @@ interface DetailedCardComponentProps {
 }
 
 export const DetailedCardComponent: React.FC<DetailedCardComponentProps> = ({ data, name, genre, src, price }) => (
-  <div className='detailed-card-component-wrapper'>
-    <div className='detailed-card-component' style={{ backgroundImage: `url(${src})` }}>
-      <div className='overlay'>
-        <button className='close-btn'>
+  <div className={styles['detailed-card-component-wrapper']}>
+    <div className={styles['detailed-card-component']} style={{ backgroundImage: `url(${src})` }}>
+      <div className={styles['overlay']}>
+        <button className={styles['close-btn']}>
           <CloseIcon />
         </button>
-        <div className='info-block'>
-          <p className='data'>{data}</p>
-          <p className='name'>{name}</p>
-          <div className='bottom-block'>
+        <div className={styles['info-block']}>
+          <p className={styles['data']}>{data}</p>
+          <p className={styles['name']}>{name}</p>
+          <div className={styles['bottom-block']}>
             <NoteIcon />
-            <p className='genre'>{genre}</p>
+            <p className={styles['genre']}>{genre}</p>
             <TicketsIcon />
-            <p className='price'>
+            <p className={styles['price']}>
               <UahIcon />
               {price}
             </p>

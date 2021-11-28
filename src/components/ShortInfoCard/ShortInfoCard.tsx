@@ -1,8 +1,7 @@
 import React from 'react'
 
 import { LinkArrowIcon, NoteIcon } from '../../assets/icons/icons'
-
-import './short-info-card.scss'
+import styles from './short-info-card.module.scss'
 
 type ShortInfoCardType = {
   name: string
@@ -13,13 +12,13 @@ type ShortInfoCardType = {
 
 const ShortInfoCard: React.FC<ShortInfoCardType> = ({ name, genre, link, src }) => (
   <div style={{ backgroundImage: `url(${src})` }} className='short-info-card'>
-    <div className='overlay' />
-    <p className='name'>{name}</p>
-    <p className='genre'>
+    <div className={styles['overlay']} />
+    <p className={styles['name']}>{name}</p>
+    <p className={styles['genre']}>
       <NoteIcon />
-      <span className='genre-label'>{genre}</span>
+      <span className={styles['genre-label']}>{genre}</span>
     </p>
-    <a href={link} className='link'>
+    <a href={link} className={styles['link']}>
       Learn more <LinkArrowIcon />
     </a>
   </div>
